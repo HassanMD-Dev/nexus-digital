@@ -135,7 +135,7 @@ li > a:hover {
   line-height: 1.6;
   color: #d1d1d1;
 }
-#contact > .container {
+#why > .container {
   max-width: 1200px;
   min-height: 450px;
   display: flex;
@@ -197,4 +197,75 @@ li > a:hover {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+#contact {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+#contact > .contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-container > h2 {
+  padding: 10px 18px;
+  font-size: 26px;
+}
+.contact-container > p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px auto 0 auto;
+  text-align: left;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group > label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: var(--dark-color);
+}
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1.5px solid #eee;
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  background-color: #fff;
+}
+textarea {
+  height: 150px;
+  resize: none;
+}
+.submit-btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+.submit-btn:hover {
+  background-color: var(--dark-color);
 }
