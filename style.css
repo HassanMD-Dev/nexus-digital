@@ -307,3 +307,43 @@ footer {
   font-size: 14px;
   color: #ccc;
 }
+@media screen and (max-width: 768px) {
+  .nav-name {
+    width: 100%;
+    text-align: center;
+  }
+  ul {
+    display: none;
+  }
+  #home > .container {
+    height: auto;
+    padding: 80px 20px;
+  }
+  .container > h1 {
+    font-size: 32px;
+  }
+  .container > p {
+    width: 100%;
+  }
+  #services > .container,
+  #why > .container,
+  #contact > .container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  .right-container {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .service-card,
+  .box,
+  .left-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  form {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
