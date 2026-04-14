@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #007bff;
+  --dark-color: #2c3e50;
+  --bg-color: #f8f9fa;
+  --text-color: #333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  max-width: 1200px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+ul {
+  display: flex;
+  gap: 38px;
+}
+ul > li {
+  list-style-type: none;
+}
+li > a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+li > a:hover {
+  color: var(--primary-color);
+}
+.navbar > .nav-name {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.navbar > .nav-name > span {
+  color: var(--primary-color);
+}
+#home > .container {
+  max-width: 1200px;
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px 20px;
+}
+.container > h1 {
+  font-size: 48px;
+  color: var(--dark-color);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.container > p {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #555;
+  max-width: 700px;
+}
+.container > button {
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+}
+.container > button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
