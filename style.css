@@ -87,3 +87,51 @@ li > a:hover {
   opacity: 0.9;
   transform: translateY(-2px);
 }
+#services > .container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  margin: 0 auto;
+  gap: 30px;
+}
+.service-card {
+  width: 350px;
+  height: auto;
+  min-height: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-color);
+  padding: 40px 25px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.service-card:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.service-card > i {
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  color: var(--primary-color);
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  line-height: 80px;
+}
+.service-card > h3 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.service-card > p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #d1d1d1;
+}
